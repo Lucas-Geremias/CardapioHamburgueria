@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
     <link rel="stylesheet" href="./styles/output.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -232,6 +235,7 @@
     <!-- MODALCART -->
     <div
       class="bg-black/60 w-full h-full fixed top-0 left0 z-[99] items-center justify-center hidden"
+      id="cart-modal"
     >
       <div class="bg-white p-5 rounded-md min-w[90%] md:min-w-[600px]">
         <h2 class="text-center font-bold text-2xl mb-2">Meu carrinho</h2>
@@ -266,7 +270,9 @@
     <!-- FIM MODALCART -->
 
     <!-- FOOTER-->
-    <footer class="w-full bg-red-500 py-2 fixed bottom-0 z-40 flex items-center justify-center">
+    <footer
+      class="w-full bg-red-500 py-2 fixed bottom-0 z-40 flex items-center justify-center"
+    >
       <button
         class="flex items-center gap-2 text-white font-bold"
         id="cart-btn"
@@ -276,5 +282,8 @@
       </button>
     </footer>
     <!--FIM  FOOTER-->
+
+    <script src="script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
   </body>
 </html>
